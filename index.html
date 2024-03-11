@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie app</title>
+</head>
+
+<body>
+    <h1 id="header">Moviaap</h1>
+    <div id="movies-cards"></div>
+</body>
+<script type="module">
+    import { fixtitle, addParagraph } from "./js/dom.js";
+    import { getTrendingMovies } from "./js/api.js"
+    import { createTrendingMoviesList } from "./js/dom-manipulator/createlist.js"
+    fixtitle();
+    addParagraph();
+    const trendingMovies = await getTrendingMovies();
+    createTrendingMoviesList(trendingMovies.results);
+</script>
+
+</html>
