@@ -5,8 +5,8 @@
  */
 
 //crea una lista dei film di tendenza
-export const createTrendingMoviesList = (movies, cardId) => {
-    const cardContainer = document.getElementById(cardId);
+export const createTrendingMoviesList = (movies) => {
+    const cardContainer = document.getElementById("trendingMovies");
     movies.forEach(element => {
         const card = document.createElement("div");
         card.className = "col-12 col-md-6 col-1g-4 bg-transparent";
@@ -21,12 +21,6 @@ export const createTrendingMoviesList = (movies, cardId) => {
         cardTitle.className = "card-title";
         const cardDescription = document.createElement("p");
         cardDescription.className = "card-text";
-        const cardButtonContainer = document.createElement("div");
-        cardButtonContainer.className = "card-button-container";
-        const cardButton = document.createElement("a");
-        cardButton.innerHTML =  "Learn More";
-        cardButton.className = "btn btn-primary";
-        
 
         cardImage.src = `https://image.tmdb.org/t/p/w500${element.backdrop_path}`;
         cardTitle.textContent = element.title;
@@ -38,8 +32,6 @@ export const createTrendingMoviesList = (movies, cardId) => {
         cardInner.appendChild(cardImage); 
         cardInner.appendChild(textContainer) 
         card.appendChild(cardInner);
-        cardButtonContainer.appendChild(cardButton); 
-        cardInner.appendChild(cardButtonContainer); 
         cardContainer.appendChild(card);
 
     });
