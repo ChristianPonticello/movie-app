@@ -1,39 +1,43 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.img {
-    flex: 0 0 50%; 
-    height: 50vh; 
-    background-size: cover;
-    background-position: center;
-    position: relative;
+:root {
+    --background-color: rgba(0, 0, 0, 0.7);
+    --text-color: white;
+    --font-weight-bold: 700; /* corrisponde a 'bold' */
+    --font-style-italic: italic;
 }
 
 .content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    /* ... */
 }
 
 .title {
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
 }
 
 .description {
-    font-style: italic;
+    font-style: var(--font-style-italic);
+}
+@media (max-width: 768px) {
+    .img {
+        width: 100%; /* Le immagini occupano l'intera larghezza su dispositivi più piccoli */
+        height: auto; /* L'altezza diventa automatica per mantenere le proporzioni */
+    }
+}
+.img {
+    transition: transform 0.3s ease;
+}
+
+.img:hover {
+    transform: scale(1.05); /* Ingrandisce leggermente l'immagine al passaggio del mouse */
+}
+.container {
+    /* Altre proprietà rimangono invariate */
+    flex-direction: column; /* Imposta la direzione principale del layout in verticale */
+}
+
+.img {
+    width: 100%; /* Ogni immagine occupa l'intera larghezza del contenitore */
+    height: auto; /* L'altezza diventa automatica per mantenere le proporzioni */
+    margin-bottom: 10px; /* Aggiunge un margine inferiore tra le immagini */
 }

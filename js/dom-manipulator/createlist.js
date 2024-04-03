@@ -10,11 +10,14 @@ export const createTrendingMoviesList = (movies) => {
     movies.forEach(element => {
         const card = document.createElement("div");
         card.className = "col-12 col-md-6 col-1g-4 bg-transparent";
+
         const cardInner = document.createElement("div");
         cardInner.className = "card flex-column h-100";
+
         const cardImage = document.createElement("img");
         cardImage.alt = "backdrop";
         cardImage.className = "card-img-top";
+        
         const textContainer = document.createElement("div");
         textContainer.className = "card-body";
         const cardTitle = document.createElement("h5");
