@@ -9,7 +9,7 @@ export const createTrendingMoviesList = (movies) => {
     const cardContainer = document.getElementById("trendingMovies");
     movies.forEach(element => {
         const card = document.createElement("div");
-        card.className = "col-12 col-md-6 col-1g-4 bg-transparent mb20";
+        card.className = "col-12 col-md-6 col-lg-4 bg-transparent mb20";
 
         const cardInner = document.createElement("div");
         cardInner.className = "card flex-column h-100";
@@ -43,7 +43,7 @@ export const createTrendingTvList = (tv) => {
     const cardContainer = document.getElementById("trendingTv");
     tv.forEach(element => {
         const card = document.createElement("div");
-        card.className = "col-12 col-md-6 col-1g-4 bg-transparent mb20";
+        card.className = "col-12 col-md-6 col-lg-4 bg-transparent mb20";
 
         const cardInner = document.createElement("div");
         cardInner.className = "card flex-column h-100";
