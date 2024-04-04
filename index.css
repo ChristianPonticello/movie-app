@@ -1,18 +1,18 @@
-/* Reset del margin e del padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Stile del body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
@@ -38,7 +38,7 @@ body {
     color: #28a745;
 }
 
-/* Form di ricerca */
+
 .form-inline .form-control {
     margin-right: 10px;
 }
@@ -53,19 +53,19 @@ body {
     color: #fff;
 }
 
-/* Titoli */
+
 h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Container */
+
 .container {
     padding: 20px;
 }
 
-/* Cards */
+
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
 }
 
-/* Footer */
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Sposta leggermente la carta verso l'alto quando passi sopra con il mouse */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta l'ombra durante l'hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
 

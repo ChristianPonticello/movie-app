@@ -4,7 +4,7 @@
 @returns} movies 
  */
 
-//crea una lista dei film di tendenza
+
 export const createTrendingMoviesList = (movies) => {
     const cardContainer = document.getElementById("trendingMovies");
     movies.forEach(element => {
@@ -29,7 +29,7 @@ export const createTrendingMoviesList = (movies) => {
         cardTitle.textContent = element.title;
         cardDescription.textContent = element.overview;
 
-        // Aggiungo gli elementi al contenitore principale
+        
         textContainer.appendChild(cardTitle); 
         textContainer.appendChild(cardDescription); 
         cardInner.appendChild(cardImage); 
@@ -63,7 +63,7 @@ export const createTrendingTvList = (tv) => {
         cardTitle.textContent = element.title;
         cardDescription.textContent = element.overview;
 
-        // Aggiungo gli elementi al contenitore principale
+        
         textContainer.appendChild(cardTitle); 
         textContainer.appendChild(cardDescription); 
         cardInner.appendChild(cardImage); 
