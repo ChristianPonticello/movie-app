@@ -60,7 +60,7 @@ export const createTrendingTvList = (tv) => {
         cardDescription.className = "card-text";
 
         cardImage.src = `https://image.tmdb.org/t/p/w500${element.backdrop_path}`;
-        cardTitle.textContent = element.title;
+        cardTitle.textContent = element.name;
         cardDescription.textContent = element.overview;
 
         
